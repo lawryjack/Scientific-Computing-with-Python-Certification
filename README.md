@@ -7,7 +7,7 @@ This project mainly focussed on the use of strings and how to manipulate them an
 
 
 Project 2: Time Calculator
-----------------
+asdf
 
 
 Project 3: Budget App

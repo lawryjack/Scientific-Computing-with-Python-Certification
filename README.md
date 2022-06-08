@@ -2,7 +2,7 @@
 
 While earning my Scientific Computing with Python certification from freecodecamp.org I completed 5 different projects that focussed on various topics in Python.
 
-##Project 1: Arithmetic Formatter
+### Project 1: Arithmetic Formatter
 
 This project mainly focussed on the use of strings and how to manipulate them and format outputs in a certain way.
 

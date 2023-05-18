@@ -9,13 +9,10 @@ def add_time(start, duration, dayOfWeekIn = False):
     durationHour = int(duration.partition(":")[0]);
     durationMin = int(duration.partition(":")[2]);
 
-    ################################################################################
     #Defining a dicitonary and list for the days of the week
     dayOfWeekDict = {"monday": 0, "tuesday": 1, "wednesday": 2, "thursday": 3, "friday": 4, "saturday": 5, "sunday": 6};
     dayOfWeekArray = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];    
     
-      
-    ################################################################################
     #Finding the final result minute
     resultMin = startMin + durationMin;
     if (resultMin >= 60):
@@ -31,10 +28,7 @@ def add_time(start, duration, dayOfWeekIn = False):
     
     resultHour = (startHour + durationHour) % 12; 
 
-
-    ####################################################################################
-    #Finding the correct meridian
-    
+    #Finding the correct meridian    
     numMeridianChanges = int((startHour + durationHour) / 12);
     meridianRef = numMeridianChanges % 2;
 
@@ -45,10 +39,7 @@ def add_time(start, duration, dayOfWeekIn = False):
     elif meridianRef == 0:
         meridian = meridian;
     
-
-    ##############################################################################
     #Finding the final result hour and number of days past
-
     numDays = int(durationHour / 24);
     remainderHours = durationHour % 24;
     
